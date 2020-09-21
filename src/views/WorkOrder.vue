@@ -10,8 +10,7 @@
       <div class="add-refresh">
         <!-- <img @click="refresh">刷新</img> -->
         <img src="../assets/img/profile/refresh.png" @click="refresh" alt="">
-        <!-- <span class="add-order" @click="addOrder">添加</span> -->
-        <img class="add-order" @click="addOrder" src="../assets/img/profile/refresh.png" alt="">
+        <span class="add-order" @click="addOrder">+</span>
       </div>
     </div>
     <mt-navbar v-model="selected">
@@ -169,11 +168,13 @@
 
   .add-order {
     margin-left: 10px;
+    font-size: 35px;
   }
 
   .add-refresh img {
     width: 30px;
     height: 30px;
+    padding-top: 5px;
   }
 
   #content {
