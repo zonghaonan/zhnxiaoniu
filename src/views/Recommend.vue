@@ -7,7 +7,7 @@
         </i>
         加入推广
       </div>
-      <span class="refresh-icon" @click="refresh">刷新</span>
+      <img src="../assets/img/profile/refresh.png" class="refresh-icon" @click="refresh" alt="">
     </div>
     <!-- <div class="profile-info"></div> -->
     <input id="address" type="text" :value="downloadData">
@@ -216,6 +216,11 @@
 
   .order-msg {
     display: flex;
+  }
+
+  .refresh-icon {
+    width: 30px;
+    height: 30px;
   }
 
   .main-msg {
